@@ -30,7 +30,7 @@ for td in tds:
 for a in product_link_set:
     # print(a)
     sourceProduct= requests.get(a, headers=headers).text
-    soupProduct= BeautifulSoup(sourceProduct, 'lxml')
+    soupProduct= BeautifulSoup(sourceProduct, 'html.parser')
     soldBy= str(soupProduct.find('td', attrs={"id": "white", "valign": "bottom", "width" : "75%"}).text).splitlines()[0].strip()
     phoneText =  re.findall("Mobile Phone:.*[0-9]{10}" ,str(soupProduct))
     if (phoneText):
@@ -41,7 +41,7 @@ for a in product_link_set:
 
     # add seller name and phone to the listSellerPhone list
     listSellerPhone.append({'name':soldBy, 'phone': phone})
-    # print(soldBy)
-    # print(phone)
+    print(soldBy)
+    print(phone)
 # print the list of object
 print(listSellerPhone)
