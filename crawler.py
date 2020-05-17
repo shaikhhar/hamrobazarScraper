@@ -16,6 +16,7 @@ tds= soup.find_all('td')
 # initialize set of links to product page
 product_link_set= set()
 
+# initialize a list to store seller name and phone
 listSellerPhone = []
 
 for td in tds:
