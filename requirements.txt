@@ -1,0 +1,14 @@
+beautifulsoup4==4.4.1
+json5==0.9.4
+jsonschema==3.2.0
+pandas==0.24.2
+numpy==1.19.4
+lxml==4.6.1
+requests==2.23.0
+urllib3==1.25.9
+
+# Important - use old version of cloudscraper
+# Cloudscraper is like a VPN that bypass the cloudflare (5 second delay for international visitor)
+cloudscraper==1.1.4
+# Newer version of opensource (free) coud-scraper does not work 
+# cloudscraper==1.2.38
