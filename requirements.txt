@@ -5,7 +5,7 @@ pandas==0.24.2
 numpy==1.19.4
 lxml==4.6.1
 requests==2.23.0
-urllib3==1.25.9
+urllib3==1.26.5
 
 # Important - use old version of cloudscraper
 # Cloudscraper is like a VPN that bypass the cloudflare (5 second delay for international visitor)
